@@ -625,10 +625,10 @@ var pJS = function(tag_id, params){
     
     pJS.canvas.ctx.clearRect(0, 0, pJS.canvas.w, pJS.canvas.h);
 
-    /* update each particles param */
+    
     pJS.fn.particlesUpdate();
 
-    /* draw each particle */
+    
     for(var i = 0; i < pJS.particles.array.length; i++){
       var p = pJS.particles.array[i];
       p.draw();
@@ -651,13 +651,13 @@ var pJS = function(tag_id, params){
     pJS.fn.particlesEmpty();
     pJS.fn.canvasClear();
     
-    /* restart */
+    
     pJS.fn.vendors.start();
 
   };
 
 
-  /* ---------- pJS functions - particles interaction ------------ */
+  
 
   pJS.fn.interact.linkParticles = function(p1, p2){
 
@@ -665,7 +665,7 @@ var pJS = function(tag_id, params){
         dy = p1.y - p2.y,
         dist = Math.sqrt(dx*dx + dy*dy);
 
-    /* draw a line between p1 and p2 if the distance between them is under the config distance */
+    
     if(dist <= pJS.particles.line_linked.distance){
 
       var opacity_line = pJS.particles.line_linked.opacity - (dist / (1/pJS.particles.line_linked.opacity)) / pJS.particles.line_linked.distance;
