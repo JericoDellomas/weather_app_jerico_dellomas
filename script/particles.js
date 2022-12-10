@@ -1143,16 +1143,16 @@ var pJS = function(tag_id, params){
 
     if(pJS.particles.number.density.enable){
 
-      /* calc area */
+      
       var area = pJS.canvas.el.width * pJS.canvas.el.height / 1000;
       if(pJS.tmp.retina){
         area = area/(pJS.canvas.pxratio*2);
       }
 
-      /* calc number of particles based on density area */
+      
       var nb_particles = area * pJS.particles.number.value / pJS.particles.number.density.value_area;
 
-      /* add or remove X particles */
+      
       var missing_particles = pJS.particles.array.length - nb_particles;
       if(missing_particles < 0) pJS.fn.modes.pushParticles(Math.abs(missing_particles));
       else pJS.fn.modes.removeParticles(missing_particles);
@@ -1181,7 +1181,7 @@ var pJS = function(tag_id, params){
 
   pJS.fn.vendors.createSvgImg = function(p){
 
-    /* set color to svg element */
+    
     var svgXml = pJS.tmp.source_svg,
         rgbHex = /#([0-9A-F]{3,6})/gi,
         coloredSvgXml = svgXml.replace(rgbHex, function (m, r, g, b) {
@@ -1193,12 +1193,12 @@ var pJS = function(tag_id, params){
           return color_value;
         });
 
-    /* prepare to create img with colored svg */
+    
     var svg = new Blob([coloredSvgXml], {type: 'image/svg+xml;charset=utf-8'}),
         DOMURL = window.URL || window.webkitURL || window,
         url = DOMURL.createObjectURL(svg);
 
-    /* create particle img obj */
+    
     var img = new Image();
     img.addEventListener('load', function(){
       p.img.obj = img;
@@ -1220,11 +1220,11 @@ var pJS = function(tag_id, params){
 
   pJS.fn.vendors.drawShape = function(c, startX, startY, sideLength, sideCountNumerator, sideCountDenominator){
 
-    // By Programming Thomas - https://programmingthomas.wordpress.com/2013/04/03/n-sided-shapes/
+    
     var sideCount = sideCountNumerator * sideCountDenominator;
     var decimalSides = sideCountNumerator / sideCountDenominator;
     var interiorAngleDegrees = (180 * (decimalSides - 2)) / decimalSides;
-    var interiorAngle = Math.PI - Math.PI * interiorAngleDegrees / 180; // convert to radians
+    var interiorAngle = Math.PI - Math.PI * interiorAngleDegrees / 180; 
     c.save();
     c.beginPath();
     c.translate(startX, startY);
@@ -1234,7 +1234,7 @@ var pJS = function(tag_id, params){
       c.translate(sideLength,0);
       c.rotate(interiorAngle);
     }
-    //c.stroke();
+    
     c.fill();
     c.restore();
 
