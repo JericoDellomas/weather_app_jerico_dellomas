@@ -1298,7 +1298,7 @@ var pJS = function(tag_id, params){
           if(!pJS.particles.move.enable) cancelRequestAnimFrame(pJS.fn.drawAnimFrame);
           else pJS.fn.drawAnimFrame = requestAnimFrame(pJS.fn.vendors.draw);
         }else{
-          //console.log('still loading...');
+          
           if(!pJS.tmp.img_error) pJS.fn.drawAnimFrame = requestAnimFrame(pJS.fn.vendors.draw);
         }
 
@@ -1325,13 +1325,13 @@ var pJS = function(tag_id, params){
 
   pJS.fn.vendors.checkBeforeDraw = function(){
 
-    // if shape is image
+    
     if(pJS.particles.shape.type == 'image'){
 
       if(pJS.tmp.img_type == 'svg' && pJS.tmp.source_svg == undefined){
         pJS.tmp.checkAnimFrame = requestAnimFrame(check);
       }else{
-        //console.log('images loaded! cancel check');
+        
         cancelRequestAnimFrame(pJS.tmp.checkAnimFrame);
         if(!pJS.tmp.img_error){
           pJS.fn.vendors.init();
@@ -1350,7 +1350,7 @@ var pJS = function(tag_id, params){
 
   pJS.fn.vendors.init = function(){
 
-    /* init canvas + particles */
+    
     pJS.fn.retinaInit();
     pJS.fn.canvasInit();
     pJS.fn.canvasSize();
@@ -1358,7 +1358,7 @@ var pJS = function(tag_id, params){
     pJS.fn.particlesCreate();
     pJS.fn.vendors.densityAutoParticles();
 
-    /* particles.line_linked - convert hex colors to rgb */
+    
     pJS.particles.line_linked.color_rgb_line = hexToRgb(pJS.particles.line_linked.color);
 
   };
@@ -1378,8 +1378,7 @@ var pJS = function(tag_id, params){
 
 
 
-  /* ---------- pJS - start ------------ */
-
+  
 
   pJS.fn.vendors.eventsListeners();
 
@@ -1389,7 +1388,7 @@ var pJS = function(tag_id, params){
 
 };
 
-/* ---------- global functions - vendors ------------ */
+
 
 Object.deepExtend = function(destination, source) {
   for (var property in source) {
@@ -1425,8 +1424,7 @@ window.cancelRequestAnimFrame = ( function() {
 } )();
 
 function hexToRgb(hex){
-  // By Tim Down - http://stackoverflow.com/a/5624139/3493650
-  // Expand shorthand form (e.g. "03F") to full form (e.g. "0033FF")
+  
   var shorthandRegex = /^#?([a-f\d])([a-f\d])([a-f\d])$/i;
   hex = hex.replace(shorthandRegex, function(m, r, g, b) {
      return r + r + g + g + b + b;
@@ -1448,49 +1446,46 @@ function isInArray(value, array) {
 }
 
 
-/* ---------- particles.js functions - start ------------ */
 
 window.pJSDom = [];
 
 window.particlesJS = function(tag_id, params){
 
-  //console.log(params);
-
-  /* no string id? so it's object params, and set the id with default id */
+  
   if(typeof(tag_id) != 'string'){
     params = tag_id;
     tag_id = 'particles-js';
   }
 
-  /* no id? set the id to default id */
+  
   if(!tag_id){
     tag_id = 'particles-js';
   }
 
-  /* pJS elements */
+ 
   var pJS_tag = document.getElementById(tag_id),
       pJS_canvas_class = 'particles-js-canvas-el',
       exist_canvas = pJS_tag.getElementsByClassName(pJS_canvas_class);
 
-  /* remove canvas if exists into the pJS target tag */
+  
   if(exist_canvas.length){
     while(exist_canvas.length > 0){
       pJS_tag.removeChild(exist_canvas[0]);
     }
   }
 
-  /* create canvas element */
+  
   var canvas_el = document.createElement('canvas');
   canvas_el.className = pJS_canvas_class;
 
-  /* set size canvas */
+  
   canvas_el.style.width = "100%";
   canvas_el.style.height = "100%";
 
-  /* append canvas */
+  
   var canvas = document.getElementById(tag_id).appendChild(canvas_el);
 
-  /* launch particle.js */
+  
   if(canvas != null){
     pJSDom.push(new pJS(tag_id, params));
   }
@@ -1499,7 +1494,7 @@ window.particlesJS = function(tag_id, params){
 
 window.particlesJS.load = function(tag_id, path_config_json, callback){
 
-  /* load json config */
+  
   var xhr = new XMLHttpRequest();
   xhr.open('GET', path_config_json);
   xhr.onreadystatechange = function (data) {
