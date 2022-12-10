@@ -1,7 +1,4 @@
-/* 
-Author: Carl Castanas  
-Date: Aug 31, 2021
-*/
+
 
 
 var pJS = function(tag_id, params){
