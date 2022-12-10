@@ -602,7 +602,7 @@ var pJS = function(tag_id, params){
             pJS.fn.interact.linkParticles(p,p2);
           }
 
-          /* attract particles */
+          
           if(pJS.particles.move.attract.enable){
             pJS.fn.interact.attractParticles(p,p2);
           }
