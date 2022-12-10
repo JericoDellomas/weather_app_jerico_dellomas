@@ -734,7 +734,7 @@ var pJS = function(tag_id, params){
   }
 
 
-  /* ---------- pJS functions - modes events ------------ */
+  
 
   pJS.fn.modes.pushParticles = function(nb, pos){
 
