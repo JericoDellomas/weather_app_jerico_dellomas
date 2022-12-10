@@ -68,7 +68,7 @@ function displayWeather(){
     locationElement.innerHTML = `${weather.city}, ${weather.country}`;
 }
 
-// C to F conversion
+
 function celsiusToFahrenheit(temperature){
     return (temperature * 9/5) + 32;
 }
