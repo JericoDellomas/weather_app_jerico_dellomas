@@ -248,7 +248,7 @@ var pJS = function(tag_id, params){
     this.x = position ? position.x : Math.random() * pJS.canvas.w;
     this.y = position ? position.y : Math.random() * pJS.canvas.h;
 
-    /* check position  - into the canvas */
+    
     if(this.x > pJS.canvas.w - this.radius*2) this.x = this.x - this.radius;
     else if(this.x < this.radius*2) this.x = this.x + this.radius;
     if(this.y > pJS.canvas.h - this.radius*2) this.y = this.y - this.radius;
