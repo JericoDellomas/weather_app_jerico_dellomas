@@ -579,7 +579,7 @@ var pJS = function(tag_id, params){
         break;
       }
 
-      /* events */
+      
       if(isInArray('grab', pJS.interactivity.events.onhover.mode)){
         pJS.fn.modes.grabParticle(p);
       }
