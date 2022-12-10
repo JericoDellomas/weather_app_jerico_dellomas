@@ -523,7 +523,7 @@ var pJS = function(tag_id, params){
         if(p.opacity < 0) p.opacity = 0;
       }
 
-      /* change size */
+      
       if(pJS.particles.size.anim.enable){
         if(p.size_status == true){
           if(p.radius >= pJS.particles.size.value) p.size_status = false;
