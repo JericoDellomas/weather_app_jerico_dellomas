@@ -130,7 +130,7 @@ var pJS = function(tag_id, params){
 
   var pJS = this.pJS;
 
-  /* params settings */
+  
   if(params){
     Object.deepExtend(pJS, params);
   }
