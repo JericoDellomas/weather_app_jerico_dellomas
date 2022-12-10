@@ -1012,13 +1012,13 @@ var pJS = function(tag_id, params){
 
         if(opacity_line > 0){
 
-          /* style */
+          
           var color_line = pJS.particles.line_linked.color_rgb_line;
           pJS.canvas.ctx.strokeStyle = 'rgba('+color_line.r+','+color_line.g+','+color_line.b+','+opacity_line+')';
           pJS.canvas.ctx.lineWidth = pJS.particles.line_linked.width;
-          //pJS.canvas.ctx.lineCap = 'round'; /* performance issue */
           
-          /* path */
+          
+          
           pJS.canvas.ctx.beginPath();
           pJS.canvas.ctx.moveTo(p.x, p.y);
           pJS.canvas.ctx.lineTo(pJS.interactivity.mouse.pos_x, pJS.interactivity.mouse.pos_y);
@@ -1035,11 +1035,11 @@ var pJS = function(tag_id, params){
 
 
 
-  /* ---------- pJS functions - vendors ------------ */
+  
 
   pJS.fn.vendors.eventsListeners = function(){
 
-    /* events target element */
+    
     if(pJS.interactivity.detect_on == 'window'){
       pJS.interactivity.el = window;
     }else{
@@ -1047,10 +1047,10 @@ var pJS = function(tag_id, params){
     }
 
 
-    /* detect mouse pos - on hover / click event */
+    
     if(pJS.interactivity.events.onhover.enable || pJS.interactivity.events.onclick.enable){
 
-      /* el on mousemove */
+      
       pJS.interactivity.el.addEventListener('mousemove', function(e){
 
         if(pJS.interactivity.el == window){
@@ -1074,7 +1074,7 @@ var pJS = function(tag_id, params){
 
       });
 
-      /* el on onmouseleave */
+      
       pJS.interactivity.el.addEventListener('mouseleave', function(e){
 
         pJS.interactivity.mouse.pos_x = null;
@@ -1085,7 +1085,7 @@ var pJS = function(tag_id, params){
 
     }
 
-    /* on click event */
+    
     if(pJS.interactivity.events.onclick.enable){
 
       pJS.interactivity.el.addEventListener('click', function(){
