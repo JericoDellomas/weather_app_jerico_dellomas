@@ -1005,7 +1005,7 @@ var pJS = function(tag_id, params){
           dy_mouse = p.y - pJS.interactivity.mouse.pos_y,
           dist_mouse = Math.sqrt(dx_mouse*dx_mouse + dy_mouse*dy_mouse);
 
-      /* draw a line between the cursor and the particle if the distance between them is under the config distance */
+      
       if(dist_mouse <= pJS.interactivity.modes.grab.distance){
 
         var opacity_line = pJS.interactivity.modes.grab.line_linked.opacity - (dist_mouse / (1/pJS.interactivity.modes.grab.line_linked.opacity)) / pJS.interactivity.modes.grab.distance;
