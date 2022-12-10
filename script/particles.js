@@ -435,7 +435,7 @@ var pJS = function(tag_id, params){
           p.y - radius / (2.66/3.5), 
           radius*2.66 / (pJS.particles.shape.polygon.nb_sides/3), 
           pJS.particles.shape.polygon.nb_sides, 
-          1 // sideCountDenominator
+          1 
         );
       break;
 
