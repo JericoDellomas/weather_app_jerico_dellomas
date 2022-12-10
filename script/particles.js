@@ -254,7 +254,7 @@ var pJS = function(tag_id, params){
     if(this.y > pJS.canvas.h - this.radius*2) this.y = this.y - this.radius;
     else if(this.y < this.radius*2) this.y = this.y + this.radius;
 
-    /* check position - avoid overlap */
+    
     if(pJS.particles.move.bounce){
       pJS.fn.vendors.checkOverlap(this, position);
     }
