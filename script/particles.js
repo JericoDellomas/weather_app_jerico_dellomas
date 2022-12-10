@@ -535,7 +535,7 @@ var pJS = function(tag_id, params){
         if(p.radius < 0) p.radius = 0;
       }
 
-      /* change particle position if it is out of canvas */
+      
       if(pJS.particles.move.out_mode == 'bounce'){
         var new_pos = {
           x_left: p.radius,
