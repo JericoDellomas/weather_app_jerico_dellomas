@@ -694,7 +694,7 @@ var pJS = function(tag_id, params){
 
   pJS.fn.interact.attractParticles  = function(p1, p2){
 
-    /* condensed particles */
+    
     var dx = p1.x - p2.x,
         dy = p1.y - p2.y,
         dist = Math.sqrt(dx*dx + dy*dy);
