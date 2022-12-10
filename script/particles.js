@@ -211,7 +211,7 @@ var pJS = function(tag_id, params){
             pJS.fn.vendors.densityAutoParticles();
           }
 
-        /* density particles enabled */
+       
         pJS.fn.vendors.densityAutoParticles();
 
       });
