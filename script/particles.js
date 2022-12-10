@@ -306,7 +306,7 @@ var pJS = function(tag_id, params){
       }
     }
 
-    /* animation - velocity for speed */
+    
     var velbase = {}
     switch(pJS.particles.move.direction){
       case 'top':
