@@ -499,7 +499,7 @@ var pJS = function(tag_id, params){
 
     for(var i = 0; i < pJS.particles.array.length; i++){
 
-      /* the particle */
+      
       var p = pJS.particles.array[i];
 
       
