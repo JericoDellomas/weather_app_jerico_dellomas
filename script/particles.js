@@ -597,7 +597,7 @@ var pJS = function(tag_id, params){
         for(var j = i + 1; j < pJS.particles.array.length; j++){
           var p2 = pJS.particles.array[j];
 
-          /* link particles */
+          
           if(pJS.particles.line_linked.enable){
             pJS.fn.interact.linkParticles(p,p2);
           }
