@@ -607,7 +607,7 @@ var pJS = function(tag_id, params){
             pJS.fn.interact.attractParticles(p,p2);
           }
 
-          /* bounce particles */
+          
           if(pJS.particles.move.bounce){
             pJS.fn.interact.bounceParticles(p,p2);
           }
