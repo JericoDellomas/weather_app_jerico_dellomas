@@ -357,7 +357,7 @@ var pJS = function(tag_id, params){
 
     
 
-    /* if shape is image */
+    
 
     var shape_type = pJS.particles.shape.type;
     if(typeof(shape_type) == 'object'){
