@@ -896,9 +896,9 @@ var pJS = function(tag_id, params){
       }
 
       if(pJS.tmp.bubble_clicking){
-        /* size */
+        
         process(pJS.interactivity.modes.bubble.size, pJS.particles.size.value, p.radius_bubble, p.radius, 'size');
-        /* opacity */
+        
         process(pJS.interactivity.modes.bubble.opacity, pJS.particles.opacity.value, p.opacity_bubble, p.opacity, 'opacity');
       }
 
@@ -974,19 +974,11 @@ var pJS = function(tag_id, params){
 
         }
 
-        // default
+        
         if(d <= repulseRadius){
           process();
         }
 
-        // bang - slow motion mode
-        // if(!pJS.tmp.repulse_finish){
-        //   if(d <= repulseRadius){
-        //     process();
-        //   }
-        // }else{
-        //   process();
-        // }
         
 
       }else{
