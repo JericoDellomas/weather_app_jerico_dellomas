@@ -431,7 +431,7 @@ var pJS = function(tag_id, params){
       case 'polygon':
         pJS.fn.vendors.drawShape(
           pJS.canvas.ctx,
-          p.x - radius / (pJS.particles.shape.polygon.nb_sides/3.5), // startX
+          p.x - radius / (pJS.particles.shape.polygon.nb_sides/3.5), 
           p.y - radius / (2.66/3.5), // startY
           radius*2.66 / (pJS.particles.shape.polygon.nb_sides/3), // sideLength
           pJS.particles.shape.polygon.nb_sides, // sideCountNumerator
