@@ -511,7 +511,7 @@ var pJS = function(tag_id, params){
         p.y += p.vy * ms;
       }
 
-      /* change opacity status */
+      
       if(pJS.particles.opacity.anim.enable) {
         if(p.opacity_status == true) {
           if(p.opacity >= pJS.particles.opacity.value) p.opacity_status = false;
