@@ -569,7 +569,7 @@ var pJS = function(tag_id, params){
         p.x = Math.random() * pJS.canvas.w;
       }
 
-      /* out of canvas modes */
+     
       switch(pJS.particles.move.out_mode){
         case 'bounce':
           if (p.x + p.radius > pJS.canvas.w) p.vx = -p.vx;
