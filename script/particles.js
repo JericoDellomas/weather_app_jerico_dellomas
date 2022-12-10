@@ -259,7 +259,7 @@ var pJS = function(tag_id, params){
       pJS.fn.vendors.checkOverlap(this, position);
     }
 
-    /* color */
+   
     this.color = {};
     if(typeof(color.value) == 'object'){
 
