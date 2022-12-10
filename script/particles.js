@@ -592,7 +592,7 @@ var pJS = function(tag_id, params){
         pJS.fn.modes.repulseParticle(p);
       }
 
-      /* interaction auto between particles */
+      
       if(pJS.particles.line_linked.enable || pJS.particles.move.attract.enable){
         for(var j = i + 1; j < pJS.particles.array.length; j++){
           var p2 = pJS.particles.array[j];
