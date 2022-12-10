@@ -296,7 +296,7 @@ var pJS = function(tag_id, params){
       this.color.rgb = hexToRgb(this.color.value);
     }
 
-    /* opacity */
+    
     this.opacity = (pJS.particles.opacity.random ? Math.random() : 1) * pJS.particles.opacity.value;
     if(pJS.particles.opacity.anim.enable){
       this.opacity_status = false;
