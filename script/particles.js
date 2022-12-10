@@ -234,7 +234,7 @@ var pJS = function(tag_id, params){
 
   pJS.fn.particle = function(color, opacity, position){
 
-    /* size */
+    
     this.radius = (pJS.particles.size.random ? Math.random() : 1) * pJS.particles.size.value;
     if(pJS.particles.size.anim.enable){
       this.size_status = false;
