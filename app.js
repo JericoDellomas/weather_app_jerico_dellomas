@@ -60,7 +60,7 @@ function getWeather(latitude, longitude){
         });
 }
 
-// DISPLAY WEATHER TO UI
+
 function displayWeather(){
     iconElement.innerHTML = `<img src="icons/${weather.iconId}.png"/>`;
     tempElement.innerHTML = `${weather.temperature.value}°<span>C</span>`;
